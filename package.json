@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node:start": "http-server ./ -p 8080"
+    "node:start": "http-server ./ -p 8080",
+    "flow": "flow"
   },
   "author": "",
   "license": "ISC",

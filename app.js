@@ -1,8 +1,13 @@
-import angular from 'angular';
-import testService  from './test.service.js';
-import testCtrl  from './test.controller.js';
+/* @flow */
+import angular from './node_modules/angular';
+import TestController from './test.controller.js';
+import { TestService } from "./test.service";
 
-angular.module('angularBabel', [])
-.service('TestService', testService)
-.controller('TestCtrl', testCtrl);
+const app = angular.module('angularBabel', []);
+
+// Controllers
+app.controller('TestCtrl', TestController);
+
+// Services
+app.service('TestService', TestService);
 

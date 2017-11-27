@@ -1,8 +1,13 @@
 /* @flow */
-export default [function() {
-    return {
-        convert: function (x : number) : number {
-            return x * 2;
-        }
-    };
-}]
+export class TestService {
+
+    test: number;
+
+    constructor(){
+        this.test = 3;
+    }
+
+    convert(x : number) : number {
+        return x * this.test;
+    }
+}
